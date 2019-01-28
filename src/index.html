@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pickin' Cats</title>
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+
+    <h1>Pickin' cats</h1>
+    
+    <div id="cat-container" class="container is-fluid">
+      <label id="pdf-path" for=""></label>
+      <button id="print-pdf">Print this!</button>
+      <div class="field">
+        <div class="control">
+          <div class="select is-primary">
+            <select name="" id="cat-selector">
+              <option value="">Select a Cat</option>
+              <option value="cat-1">JoJo</option>
+              <option value="cat-2">Cali</option>
+              <option value="cat-3">Sam</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <article class="media">
+          <figure class="media-left">
+            <p class="image is-200x200">
+              <img id="cat-pic" src="" style="max-width: 200px;">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <span id="cat-name"></span> 
+              <p id="cat-bio"></p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+
+    <script src="./js/cats.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+  </body>
+</html>
