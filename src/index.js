@@ -79,7 +79,7 @@ ipcMain.on('print-to-pdf', (event) => {
 
       shell.openExternal(`file://${pdfPath}`);
 
-      // event.sender('wrote-pdf', pdfPath);
+      event.sender.send('wrote-pdf', pdfPath);
     });
   });
 });
